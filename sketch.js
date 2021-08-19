@@ -66,13 +66,9 @@ function draw() {
     divisions[k].display();
   }
 
-  for(var d = 0; d < particles.length; d++){
-    particles[d].display;
-  }
-
   //create the particles using frameCount
   if(frameCount%60===0){
-    particles.push(new particles(random(0,800),0))
+    particles.push(new Particles(random(0,800),0))
   }
 
   //display the particles 
